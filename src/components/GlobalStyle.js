@@ -20,7 +20,7 @@ button{
     background: transparent;
     color: white;
     transition: all 0.5 ease;
-    font-family: 'Inter', sans-serif
+    font-family: 'Inter', sans-serif;
     &:hover{
         background: #23d997;
         color: white;
@@ -35,6 +35,7 @@ h3{
 }
 h4{
     font-weight: bold;
+    font-size: 2rem;
 }
 a{
     font-size: 1.1.rem;
