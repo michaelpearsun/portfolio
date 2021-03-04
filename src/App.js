@@ -4,6 +4,7 @@ import GlobalStyle from './components/GlobalStyle';
 import Nav from './components/Nav';
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs';
+import MovieDetail from './pages/MovieDetail';
 import OurWork from './pages/OurWork';
 
 function App() {
@@ -15,8 +16,11 @@ function App() {
       <Route path="/" exact>
         <AboutUs/>
       </Route>
-      <Route path="/work">
+      <Route path="/work" exact>
         <OurWork/>
+      </Route>
+      <Route path="/work/:id">
+        <MovieDetail/>
       </Route>
       <Route path="/contact">
         <ContactUs/>
