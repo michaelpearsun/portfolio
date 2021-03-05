@@ -7,12 +7,13 @@ import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 //Animations
 import { motion } from "framer-motion";
+import { pageAnimation } from '../animation';
 
 
 
 const OurWork = () => {
     return (
-        <StyledComponentOurWork>
+        <StyledComponentOurWork variants={ pageAnimation } exit="exit" initial="hidden" animate="show" style={{ background: "#fff" }} >
             <StyledComponentMovie>
                 <h2>The Athlete</h2>
                 <div className="line"></div>
@@ -38,7 +39,7 @@ const OurWork = () => {
     )
 }
 
-const StyledComponentOurWork = styled.div`
+const StyledComponentOurWork = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
