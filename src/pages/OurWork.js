@@ -7,18 +7,26 @@ import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 //Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from '../animation';
+import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from '../animation';
 
 
 
 const OurWork = () => {
     return (
-        <StyledComponentOurWork variants={ pageAnimation } exit="exit" initial="hidden" animate="show" style={{ background: "#fff" }} >
+        <StyledComponentOurWork variants={pageAnimation} exit="exit" initial="hidden" animate="show" style={{ background: "#fff" }} >
+            <motion.div variants={sliderContainer}>
+                <StyledComponentFrame1 variants={slider}></StyledComponentFrame1>
+                <StyledComponentFrame2 variants={slider}></StyledComponentFrame2>
+                <StyledComponentFrame3 variants={slider}></StyledComponentFrame3>
+                <StyledComponentFrame4 variants={slider}></StyledComponentFrame4>
+            </motion.div>
             <StyledComponentMovie>
-                <h2>The Athlete</h2>
-                <div className="line"></div>
+                <motion.h2 variants={fade}>The Athlete</motion.h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/the-athlete">
-                    <img src={athlete} alt="athlete" />
+                    <StyledComponentHide>
+                        <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+                    </StyledComponentHide>
                 </Link>
             </StyledComponentMovie>
             <StyledComponentMovie>
@@ -37,7 +45,7 @@ const OurWork = () => {
             </StyledComponentMovie>
         </StyledComponentOurWork>
     )
-}
+};
 
 const StyledComponentOurWork = styled(motion.div)`
     min-height: 100vh;
@@ -46,13 +54,13 @@ const StyledComponentOurWork = styled(motion.div)`
     h2{
         padding: 1rem 0rem;
     }
-`
+`;
 
 const StyledComponentMovie = styled.div`
     padding-bottom: 10rem;
     .line{
         height: 0.5rem;
-        background: #cccccc;
+        background: #23d997;
         margin-bottom: 3rem;
     }
     img{
@@ -60,6 +68,32 @@ const StyledComponentMovie = styled.div`
         height: 70vh;
         object-fit: cover;
     }
-`
+`;
+
+const StyledComponentHide = styled.div`
+    overflow: hidden;
+`;
+
+const StyledComponentFrame1 = styled(motion.div)`
+    position: fixed;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    height: 100vh;
+    background: #fffebf;
+    z-index: 2;
+`;
+
+const StyledComponentFrame2 = styled(StyledComponentFrame1)`
+    background: #ff8efb;
+`;
+
+const StyledComponentFrame3 = styled(StyledComponentFrame1)`
+    background: #8ed2ff;
+`;
+
+const StyledComponentFrame4 = styled(StyledComponentFrame1)`
+    background: #8effa0;
+`;
 
 export default OurWork
