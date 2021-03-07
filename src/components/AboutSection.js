@@ -4,6 +4,7 @@ import { fade, titleAnim, photoAnim } from '../animation';
 import home1 from '../img/home1.png';
 
 import { StyledComponentAbout, StyledComponentDescription, StyledComponentImage, StyledComponentHide } from '../styles'
+import Wave from './Wave';
 
 const AboutSection = () => {
 
@@ -31,6 +32,7 @@ const AboutSection = () => {
             <StyledComponentImage>
                 <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
             </StyledComponentImage>
+            <Wave />
             </StyledComponentAbout>
     );
 };
