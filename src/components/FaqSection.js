@@ -1,43 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StyledComponentAbout } from '../styles'
+import Toggle from '../pages/Toggle';
+import { StyledComponentAbout } from '../styles';
+import {AnimateSharedLayout} from 'framer-motion';
 
 const FaqSection = () => {
     return (
         <StyledComponentFaq>
             <h2>Any Questions <span>FAQ</span></h2>
-            <div className="question">
-                <h2>How Do I Start?</h2>
+            <AnimateSharedLayout>
+            <Toggle title="How Do I Start?">
                 <div className="answer">
                     <p>Lorem Ipsum Mumbo Jumbo Sumpreme.</p>
                     <p>Lorem Ipsum Mumbo Jumbo Sumpreme Super Caga Fraga Listic Expe</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h2>Daily Schedule</h2>
+            </Toggle>
+            </AnimateSharedLayout>
+            <AnimateSharedLayout>
+            <Toggle title="Daily Schedule">
                 <div className="answer">
                     <p>Lorem Ipsum Mumbo Jumbo Sumpreme.</p>
                     <p>Lorem Ipsum Mumbo Jumbo Sumpreme Super Caga Fraga Listic Expe</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h2>Different Payment Methods</h2>
+            </Toggle>
+            </AnimateSharedLayout>
+            <AnimateSharedLayout>
+            <Toggle title="Different Payment Methods">
                 <div className="answer">
                     <p>Lorem Ipsum Mumbo Jumbo Sumpreme.</p>
                     <p>Lorem Ipsum Mumbo Jumbo Sumpreme Super Caga Fraga Listic Expe</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h2>What Prodcts do you offer?</h2>
+            </Toggle>
+            </AnimateSharedLayout>
+            <AnimateSharedLayout>
+            <Toggle title="What Prodcts do you offer?">
                 <div className="answer">
                     <p>Lorem Ipsum Mumbo Jumbo Sumpreme.</p>
                     <p>Lorem Ipsum Mumbo Jumbo Sumpreme Super Caga Fraga Listic Expe</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
+            </AnimateSharedLayout>
         </StyledComponentFaq>
     )
 }
