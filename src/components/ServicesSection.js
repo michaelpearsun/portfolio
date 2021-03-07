@@ -5,11 +5,16 @@ import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 import styled from 'styled-components';
-import { StyledComponentAbout, StyledComponentDescription, StyledComponentImage } from '../styles'
-
+import { StyledComponentAbout, StyledComponentDescription, StyledComponentImage } from '../styles';
+import { useScroll } from './useScroll';
+import { fade } from '../animation';
+//import { useInView } from 'react-intersection-observer';
+//import { useAnimation } from 'framer-motion';
+ 
 const ServicesSection = () => {
+    const [element, controls] = useScroll();
     return (
-        <StyledComponentServices>
+        <StyledComponentServices variants={fade} initial="hidden" ref={element}  >
             <StyledComponentDescription>
                 <h2>High <span>Quality</span> services</h2>
                 <StyledComponentCards>
