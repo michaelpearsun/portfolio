@@ -8,8 +8,6 @@ import styled from 'styled-components';
 import { StyledComponentAbout, StyledComponentDescription, StyledComponentImage } from '../styles';
 import { useScroll } from './useScroll';
 import { fade } from '../animation';
-//import { useInView } from 'react-intersection-observer';
-//import { useAnimation } from 'framer-motion';
  
 const ServicesSection = () => {
     const [element, controls] = useScroll();
@@ -68,6 +66,9 @@ const StyledComponentServices = styled(StyledComponentAbout)`
 const StyledComponentCards = styled.div`
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 1300px){
+        justify-content: center;
+    }
 `
 
 const StyledComponentCard = styled.div`
