@@ -21,28 +21,28 @@ const ServicesSection = () => {
                             <img alt="icon" src={clock} />
                             <h3>Efficient</h3>
                         </div>
-                        <p>Lorem Ipsum Thingie Mo Bobber.</p>
+                        <p>Agile Mindset</p>
                     </StyledComponentCard>
                     <StyledComponentCard>
                         <div className="icon">
                             <img alt="icon" src={teamwork} />
                             <h3>Teamwork</h3>
                         </div>
-                        <p>Lorem Ipsum Thingie Mo Bobber.</p>
+                        <p>No person is an island</p>
                     </StyledComponentCard>
                     <StyledComponentCard>
                         <div className="icon">
                             <img alt="icon" src={diaphragm} />
-                            <h3>Diaphragm</h3>
+                            <h3>Frontend</h3>
                         </div>
-                        <p>Lorem Ipsum Thingie Mo Bobber.</p>
+                        <p>CSS3, HTML5 & Javascript</p>
                     </StyledComponentCard>
                     <StyledComponentCard>
                         <div className="icon">
                             <img alt="icon" src={money} />
-                            <h3>Affordable</h3>
+                            <h3>Backend</h3>
                         </div>
-                        <p>Lorem Ipsum Thingie Mo Bobber.</p>
+                        <p>Mongo, SQL & Content Management</p>
                     </StyledComponentCard>
                 </StyledComponentCards>
                 <StyledComponentImage>

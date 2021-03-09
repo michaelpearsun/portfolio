@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
+import bootcampLite from "../img/bootcampLite.png"
 import athlete from "../img/athlete-small.png";
 import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
@@ -35,10 +36,10 @@ const OurWork = () => {
                 </Link>
             </StyledComponentMovie>
             <StyledComponentMovie variants={fade} ref={element} animate={controls} initial="hidden">
-                <h2>The Racer</h2>
+                <h2>Bootcamp Lite</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
-                <Link to="/work/the-racer" >
-                    <img src={theracer} alt="theracer" />
+                <Link to="/work/bootcamp-lite" >
+                    <img src={bootcampLite} alt="bootcampLite" />
                 </Link>
             </StyledComponentMovie>
             <StyledComponentMovie  variants={fade} ref={element2} animate={controls2} initial="hidden">

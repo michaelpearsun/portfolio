@@ -54,7 +54,7 @@ const StyledComponentHeadline = styled.div`
     }
     img{
         width: 100%;
-        height: 70vh;
+        height: 100vh;
         object-fit: cover;
     }
 `;

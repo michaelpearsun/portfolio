@@ -4,6 +4,8 @@ import theracer from "./img/theracer-small.png";
 import athlete2 from "./img/athlete2.png";
 import goodtimes2 from "./img/good-times2.jpg";
 import theracer2 from "./img/the-racer2.jpg";
+import bootcampLite from "./img/bootcampLite.png"
+import bootcampLite2 from "./img/bootcampLite2.png"
 
 export const MovieState = () => {
   return [
@@ -54,25 +56,29 @@ export const MovieState = () => {
       ],
     },
     {
-      title: "The Racer",
-      mainImg: theracer,
-      url: "/work/the-racer",
-      secondaryImg: theracer2,
+      title: "Bootcamp Lite",
+      mainImg: bootcampLite,
+      url: "/work/bootcamp-lite",
+      secondaryImg: bootcampLite2,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "My First Hackathon",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“It won't be my last! Had a great time. Worked with some great people!”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "The CODE",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          <a href="https://github.com/michaelpearsun/jsteacherSubmit" target="_blank">
+            <button>Github</button>
+          </a>,
         },
         {
-          title: "It’s okay lmao.",
+          title: "Published to Netlify",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          <a href="https://sleepy-kowalevski-42c144.netlify.app/" target="_blank">
+		        <button>Live Site</button>
+          </a>,
         },
       ],
     },
