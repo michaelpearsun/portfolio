@@ -21,7 +21,7 @@ const ContactUs = () => {
                 <StyledComponentHide>
                     <StyledComponentSocial variants={titleAnim}>
                         <StyledComponentCircle />
-                        <h2>SSend an email</h2>
+                        <h2><a href="mailto:michaelpearsun@gmail.com">Send an email</a></h2>
                     </StyledComponentSocial>
                 </StyledComponentHide>
                 <StyledComponentHide>

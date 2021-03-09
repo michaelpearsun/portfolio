@@ -14,32 +14,32 @@ const FaqSection = () => {
             <AnimateSharedLayout>
             <Toggle title="How Do I Start?">
                 <div className="answer">
-                    <p>Lorem Ipsum Mumbo Jumbo Sumpreme.</p>
-                    <p>Lorem Ipsum Mumbo Jumbo Sumpreme Super Caga Fraga Listic Expe</p>
+                    <p>I call it work so I get paid, but to be honest, I love doing it</p>
+                    <p>Anybody can set up a Website. I build strategic, engaging experiences that reinforce credibility, communicate key messages and turn prospects into profits. I start by listening and let that shape our design process, with my clients as partners every step of the way</p>
                 </div>
             </Toggle>
             </AnimateSharedLayout>
             <AnimateSharedLayout>
             <Toggle title="Daily Schedule">
                 <div className="answer">
-                    <p>Lorem Ipsum Mumbo Jumbo Sumpreme.</p>
-                    <p>Lorem Ipsum Mumbo Jumbo Sumpreme Super Caga Fraga Listic Expe</p>
+                    <p>I start my day when I wake up</p>
+                    <p>I work until I am finished</p>
                 </div>
             </Toggle>
             </AnimateSharedLayout>
             <AnimateSharedLayout>
-            <Toggle title="Different Payment Methods">
+            <Toggle title="What Is A Full Stack Developer">
                 <div className="answer">
-                    <p>Lorem Ipsum Mumbo Jumbo Sumpreme.</p>
-                    <p>Lorem Ipsum Mumbo Jumbo Sumpreme Super Caga Fraga Listic Expe</p>
+                    <p>I am a full stack Developer</p>
+                    <p>A full stack web developer is a person who can develop both client and server software</p>
                 </div>
             </Toggle>
             </AnimateSharedLayout>
             <AnimateSharedLayout>
-            <Toggle title="What Products do you offer?">
+            <Toggle title="What Services do you offer?">
                 <div className="answer">
-                    <p>Lorem Ipsum Mumbo Jumbo Sumpreme.</p>
-                    <p>Lorem Ipsum Mumbo Jumbo Sumpreme Super Caga Fraga Listic Expe</p>
+                    <p>Web design, web dev, consultancy & support</p>
+                    <p>In addition I can optimize your sites for search engines and get you started with a social presence</p>
                 </div>
             </Toggle>
             </AnimateSharedLayout>
