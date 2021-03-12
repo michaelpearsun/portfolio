@@ -1,20 +1,22 @@
 import React from 'react';
 import clock from '../img/clock.svg';
-import diaphragm from '../img/diaphragm.svg';
 import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
+import computer from '../img/computer.svg';
+import server from '../img/server.svg'
 import home2 from '../img/home2.png';
 import styled from 'styled-components';
-import { StyledComponentAbout, StyledComponentDescription, StyledComponentImage } from '../styles';
+import { StyledComponentAbout, StyledComponentDescription } from '../styles';
 import { useScroll } from './useScroll';
 import { fade } from '../animation';
+import mbpfpia from '../img/mbpfpia.jpg'
  
 const ServicesSection = () => {
     const [element, controls] = useScroll();
     return (
         <StyledComponentServices variants={fade} initial="hidden" ref={element}  >
             <StyledComponentDescription>
-                <h2>High <span>Quality</span> services</h2>
+                <h2>High <span>Quality</span> Services</h2>
                 <StyledComponentCards>
                     <StyledComponentCard>
                         <div className="icon">
@@ -32,21 +34,21 @@ const ServicesSection = () => {
                     </StyledComponentCard>
                     <StyledComponentCard>
                         <div className="icon">
-                            <img alt="icon" src={diaphragm} />
+                            <img alt="icon" src={computer} />
                             <h3>Frontend</h3>
                         </div>
                         <p>CSS3, HTML5 & Javascript</p>
                     </StyledComponentCard>
                     <StyledComponentCard>
                         <div className="icon">
-                            <img alt="icon" src={money} />
+                            <img alt="icon" src={server} />
                             <h3>Backend</h3>
                         </div>
                         <p>Mongo, SQL & Content Management</p>
                     </StyledComponentCard>
                 </StyledComponentCards>
                 <StyledComponentImage>
-                    <img alt="camera" src={home2} />
+                    <img alt="Michael in a competition" src={mbpfpia} />
                 </StyledComponentImage>
             </StyledComponentDescription>
         </StyledComponentServices>
@@ -82,6 +84,17 @@ const StyledComponentCard = styled.div`
             color: black;
             padding: 1rem;
         }
+    }
+`;
+
+const StyledComponentImage = styled.div`
+    flex: 1;
+    overflow: hidden;
+    z-index: 2;
+    img{
+        width: 50%;
+        height: 80vh;
+        object-fit: cover;
     }
 `
 

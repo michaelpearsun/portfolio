@@ -28,7 +28,7 @@ const FaqSection = () => {
             </Toggle>
             </AnimateSharedLayout>
             <AnimateSharedLayout>
-            <Toggle title="What Is A Full Stack Developer">
+            <Toggle title="What Is A Full Stack Developer?">
                 <div className="answer">
                     <p>I am a full stack Developer</p>
                     <p>A full stack web developer is a person who can develop both client and server software</p>

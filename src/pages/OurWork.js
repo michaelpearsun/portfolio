@@ -27,7 +27,7 @@ const OurWork = () => {
                 <StyledComponentFrame4 variants={slider}></StyledComponentFrame4>
             </motion.div>
             <StyledComponentMovie>
-                <motion.h2 variants={fade}>The Athlete</motion.h2>
+                <motion.h2 variants={fade}>Spottyfy</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/the-athlete">
                     <StyledComponentHide>
