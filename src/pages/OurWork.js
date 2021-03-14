@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
 import bootcampLite from "../img/bootcampLite.png"
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
+import jukebox1 from "../img/Jukebox1.png"
 import goodtimes from "../img/goodtimes-small.png";
 //Animations
 import { motion } from "framer-motion";
@@ -31,7 +30,7 @@ const OurWork = () => {
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/the-athlete">
                     <StyledComponentHide>
-                        <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+                        <motion.img variants={photoAnim} src={jukebox1} alt="music-player" />
                     </StyledComponentHide>
                 </Link>
             </StyledComponentMovie>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { fade, titleAnim, photoAnim } from '../animation';
-import home1 from '../img/home1.png';
 import { motion } from 'framer-motion';
 import { StyledComponentAbout, StyledComponentDescription, StyledComponentImage, StyledComponentHide } from '../styles'
 import Wave from './Wave';
 import { Link } from 'react-router-dom';
+import MBP1 from "../img/MBP1.png"
 
 const AboutSection = () => {
 
@@ -34,7 +34,7 @@ const AboutSection = () => {
                 </Link>
             </StyledComponentDescription>
             <StyledComponentImage>
-                <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+                <motion.img variants={photoAnim} src={MBP1} alt="guy with smoke" />
             </StyledComponentImage>
             <Wave />
         </StyledComponentAbout>

@@ -4,7 +4,6 @@ import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 import computer from '../img/computer.svg';
 import server from '../img/server.svg'
-import home2 from '../img/home2.png';
 import styled from 'styled-components';
 import { StyledComponentAbout, StyledComponentDescription } from '../styles';
 import { useScroll } from './useScroll';
